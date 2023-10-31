@@ -1,0 +1,10 @@
+lass Task:
+    def __init__(self, description, status="Incomplete"):
+        self.description = description
+        self.status = status
+
+    def mark_as_complete(self):
+        self.status = "Complete"
+
+    def __str__(self):
+        return f"Task: {self.description} (Status: {self.status})"
